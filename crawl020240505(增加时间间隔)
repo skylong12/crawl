@@ -13,7 +13,7 @@ def get_picture():
          url  = 'https://mn.caipu321.com/public/uploads/20200803/5f27b71ed48d5/' + str(i) + '.jpg'
          res = requests.get(url, headers = headers, timeout = 20)
          with open(extract_name(url),'wb') as f:
-              f.write(res.content)、
+              f.write(res.content)
     time.sleep(1)
 
 get_picture()        
